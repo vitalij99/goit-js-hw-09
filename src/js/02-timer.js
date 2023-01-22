@@ -34,7 +34,8 @@ const options = {
   },
   onOpen() {
     clearInterval(timerId)
-    initializeTimer({days:0, hours:0, minutes:0, seconds:0})
+    initializeTimer({ days: 0, hours: 0, minutes: 0, seconds: 0 })
+    options.defaultDate = new Date()
   }
 };
 
