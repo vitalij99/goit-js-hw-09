@@ -20,9 +20,8 @@ const options = {
   minuteIncrement: 1,
   
   onClose(selectedDates) {
-    // const timeToDeadline = convertMs(selectedDates[0] - options.defaultDate);
-    
-    if (selectedDates[0] > options.defaultDate) {
+        
+    if (selectedDates[0] > new Date()) {
       Notiflix.Notify.success('Start');
       startBtn.disabled = false;
       
